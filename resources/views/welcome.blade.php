@@ -13,11 +13,12 @@
             @foreach ($pokemons as $pokemon)
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card text-center shadow-sm">
+                    <a href="{{url('pokemon/'. $pokemon['id'])}}">
                     <img 
                         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ $pokemon['id'] }}.png" 
                         class="card-img-top p-3 pokemon-img"
-                        alt="{{ $pokemon['name'] }}"
-                    >
+                        alt="{{ $pokemon['name'] }}">
+                    </a>
                     <div class="card-body">
                         <p class="text-muted mb-1 pokemon-id">
                             N°{{ sprintf('%04d', $pokemon['id']) }}
