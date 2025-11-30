@@ -19,24 +19,24 @@ class PokemonController extends Controller{
         $response = Http::get("https://pokeapi.co/api/v2/pokemon/$id");
         $pokemon = $response->json();
 
-    $speciesResponse = Http::get($pokemon['species']['url']);
-    $speciesData = $speciesResponse->json();
-    $evolutionChainResponse = Http::get($speciesData['evolution_chain']['url']);
-    $evolutionChain = $evolutionChainResponse->json();
+        $speciesResponse = Http::get($pokemon['species']['url']);
+        $speciesData = $speciesResponse->json();
+        $evolutionChainResponse = Http::get($speciesData['evolution_chain']['url']);
+        $evolutionChain = $evolutionChainResponse->json();
 
-    $evolutions = [];
-    $current = $evolutionChain['chain'];
-    do {
-        $name = $current['species']['name'];
-        $pokeData = Http::get("https://pokeapi.co/api/v2/pokemon/$name")->json();
-        $sprite = $pokeData['sprites']['front_default'] ?? '';
-        $evolutions[] = [
-            'name' => $name,
-            'sprite' => $sprite
-        ];
-        $current = $current['evolves_to'][0] ?? null;
-    } while ($current);
+        $evolutions = [];
+        $current = $evolutionChain['chain'];
+        do {
+            $name = $current['species']['name'];
+            $pokeData = Http::get("https://pokeapi.co/api/v2/pokemon/$name")->json();
+            $sprite = $pokeData['sprites']['front_default'] ?? '';
+            $evolutions[] = [
+                'name' => $name,
+                'sprite' => $sprite
+            ];
+            $current = $current['evolves_to'][0] ?? null;
+        } while ($current);
 
-    return view('pokemon', compact('pokemon', 'evolutions'));
-}
+        return view('pokemon', compact('pokemon', 'evolutions'));
+    }
 }
