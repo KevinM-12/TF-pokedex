@@ -1,0 +1,50 @@
+.Estadistics{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dgqbqje-bd1ddee0-6719-4dc5-93bd-2063ca3758c9.png/v1/fill/w_1280,h_1280,q_80,strp/pokemon_center_logo_by_jormxdos_dgqbqje-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi9lOGRkYzRkYS0yM2RkLTQ1MDItYjY1Yi0zNzhjOWNmZTVlZmEvZGdxYnFqZS1iZDFkZGVlMC02NzE5LTRkYzUtOTNiZC0yMDYzY2EzNzU4YzkucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.q4N4qkAcRecyqkUh6Msq6DYmU1bXFkv-xt9bsGlc-lA');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 1000px;
+}
+body{
+    background-image: url("https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/vector-icons-7/pokeball-xeg9gc4xzwluseur3c3mm.png/pokeball-qdt0o2i0d34nyhk4opt88.png?_a=DATAg1AAZAA0");
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: 1000px;
+}
+
+.evo-name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+h1.text-center {
+    text-align: center;
+}
+.mb-3{
+    margin-bottom: 1rem;
+}
+.mb-4{
+    margin-bottom: 1.5rem;
+}
+
+.pokemon-img {
+    width: 200px;
+    margin: auto;
+    background-color: rgb(236, 236, 236);
+}
+
+.pokemon-img-small{
+    width: 150px;
+    margin: auto;
+}
+.pokemon-id {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.pokemon-name {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 20px;
+}
